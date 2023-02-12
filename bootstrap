@@ -1,0 +1,13 @@
+#!/bin/sh
+
+# create simlinks to dotfiles
+ln -s ~/dotfiles/zsh/.zshrc ~/.zshrc
+ln -s ~/dotfiles/vim/.vimrc ~/.zshrc
+ln -s ~/dotfiles/vim/.vim/colors/monokai.vim ~/.vim/colors/monokai.vim
+
+# install homebrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# install all packages from Brewfile
+brew bundle --file ~/.dotfiles/Brewfile
+
