@@ -43,6 +43,8 @@ brew "gspell"
 brew "gtkmm3"
 # C++ wrapper for libxml
 brew "libxml++"
+# Hierarchical note taking application featuring rich text and syntax highlighting
+brew "cherrytree"
 # Statistics utility to count lines of code
 brew "cloc"
 # GNU File, Shell, and Text utilities
@@ -65,6 +67,8 @@ brew "jq"
 brew "lf"
 # Utility for directing compilation
 brew "make"
+# Node version management
+brew "n"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 # Platform built on V8 to build network applications
@@ -105,12 +109,16 @@ cask "google-chrome"
 cask "google-chrome-canary"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
+# Allows installation and use of software designed for Windows
+cask "playonmac"
 # Collaboration platform for API development
 cask "postman"
 # Desktop app for inspecting React JS and React Native projects
 cask "reactotron"
 # Team communication and collaboration software
 cask "slack"
+# Video game digital distribution service
+cask "steam"
 # Open-source code editor
 cask "visual-studio-code"
 # Video communication and virtual meeting platform
