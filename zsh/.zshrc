@@ -46,10 +46,18 @@ export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
+# Tizen config
+export PATH=$PATH:~/tizen-studio/tools
+export PATH=$PATH:~/tizen-studio/tools/ide/bin
+export PATH=$PATH:~/tizen-studio/tools/emulator/bin
+
 # NVM config
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# rbenv config
+eval "$(rbenv init - zsh)"
 
 # JAVA config
 export JAVA_8_HOME=$(/usr/libexec/java_home -v1.8)
@@ -66,7 +74,19 @@ java13
 # aplication alias
 alias og='open -na "Google Chrome"'
 alias ogs='open -na Google\ Chrome --args --user-data-dir=/tmp/temporary-chrome-profile-dir --disable-web-security --disable-site-isolation-trials'
+alias ip='ipconfig getifaddr en0'
+alias lvim='~/.local/bin/lvim'
+
+# alias for TWC tizen build script
+alias bt='~/bin/debug_tv'
+
+# alias for open nvim insted of vim
+alias vim='nvim'
+
+# alias to open ngrok
+alias ng='ngrok http --hostname=twc.ngrok.io 3000'
 
 # key bindings
 bindkey '^r' history-incremental-search-backward
+
 
