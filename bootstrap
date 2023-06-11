@@ -2,12 +2,19 @@
 
 # create simlinks to dotfiles
 ln -s ~/dotfiles/zsh/.zshrc ~/.zshrc
-ln -s ~/dotfiles/vim/.vimrc ~/.zshrc
-ln -s ~/dotfiles/vim/.vim/colors/monokai.vim ~/.vim/colors/monokai.vim
+ln -s ~/dotfiles/gitconfig/.gitconfig ~/.gitconfig
+ln -s ~/dotfiles/gitconfig/.gitconfig-personal ~/.gitconfig-personal
 
 # install homebrew
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+# TODO: add correct variant to install local for one user
+# /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # install all packages from Brewfile
 brew bundle --file ~/.dotfiles/Brewfile
 
+# install oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+# copy nvim files
+# TODO: find out how to link whole nvim folder correctly
+cp -r ~/dotfiles/nvim ~/.config/nvim

@@ -60,31 +60,33 @@ export NVM_DIR="$HOME/.nvm"
 eval "$(rbenv init - zsh)"
 
 # JAVA config
-export JAVA_8_HOME=$(/usr/libexec/java_home -v1.8)
-export JAVA_11_HOME=$(/usr/libexec/java_home -v11)
-export JAVA_13_HOME=$(/usr/libexec/java_home -v13)
+export JAVA_8_HOME="/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home"
+export JAVA_11_HOME="/Library/Java/JavaVirtualMachines/zulu-11.jdk/Contents/Home"
+export JAVA_13_HOME="/Library/Java/JavaVirtualMachines/zulu-13.jdk/Contents/Home"
 
 alias java8='export JAVA_HOME=$JAVA_8_HOME'
 alias java11='export JAVA_HOME=$JAVA_11_HOME'
 alias java13='export JAVA_HOME=$JAVA_13_HOME'
 
-# default to Java 13
-java13
+# default to Java 11
+java11
 
 # aplication alias
 alias og='open -na "Google Chrome"'
 alias ogs='open -na Google\ Chrome --args --user-data-dir=/tmp/temporary-chrome-profile-dir --disable-web-security --disable-site-isolation-trials'
+alias oas='open -a /Applications/Android\ Studio.app'
+alias vim='nvim'
+
+# get current ip adress
 alias ip='ipconfig getifaddr en0'
-alias lvim='~/.local/bin/lvim'
+
+# git commands aliases
+alias gst='git status'
+alias glg='git log --graph --decorate'
+alias gcprev='git checkout -'
 
 # alias for TWC tizen build script
 alias bt='~/bin/debug_tv'
-
-# alias for open nvim insted of vim
-alias vim='nvim'
-
-# alias to open ngrok
-alias ng='ngrok http --hostname=twc.ngrok.io 3000'
 
 # key bindings
 bindkey '^r' history-incremental-search-backward
