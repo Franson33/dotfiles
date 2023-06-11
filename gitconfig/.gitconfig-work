@@ -1,3 +1,6 @@
 [user]
-	email = anton.franchuk@intive.com
-	name = Anton Franchuk
+email = anton.franchuk@intive.com
+name = Anton Franchuk
+
+[core]
+sshCommand = ssh -i ~/.ssh/id_sosUA

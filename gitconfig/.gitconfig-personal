@@ -1,3 +1,6 @@
 [user]
   email = antonchikfr@gmail.com
   name = Franson33
+
+[core]
+  sshCommand = ssh -i ~/.ssh/id_personal
