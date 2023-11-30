@@ -21,8 +21,8 @@ brew "adwaita-icon-theme"
 brew "jpeg-xl"
 # Codec library for encoding and decoding AV1 video streams
 brew "aom"
-# GNOME accessibility toolkit
-brew "atk"
+# Protocol definitions and daemon for D-Bus at-spi
+brew "at-spi2-core"
 # C++ interface to glib
 brew "glibmm@2.66"
 # Official C++ interface for the ATK accessibility toolkit library
@@ -123,6 +123,8 @@ brew "libxml++"
 brew "luv"
 # Utility for directing compilation
 brew "make"
+# Open source relational database management system
+brew "mysql"
 # Node version management
 brew "n"
 # Ambitious Vim-fork focused on extensibility and agility
@@ -165,6 +167,8 @@ cask "android-studio"
 cask "flipper"
 # Web browser
 cask "google-chrome-canary"
+# Visual tool to design, develop and administer MySQL servers
+cask "mysqlworkbench"
 # Standalone app for debugging React Native apps
 cask "react-native-debugger"
 # Messaging app with a focus on speed and security
