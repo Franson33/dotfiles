@@ -58,13 +58,15 @@ eval "$(rbenv init - zsh)"
 export JAVA_8_HOME="/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home"
 export JAVA_11_HOME="/Library/Java/JavaVirtualMachines/zulu-11.jdk/Contents/Home"
 export JAVA_13_HOME="/Library/Java/JavaVirtualMachines/zulu-13.jdk/Contents/Home"
+export JAVA_17_HOME="/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home"
 
 alias java8='export JAVA_HOME=$JAVA_8_HOME'
 alias java11='export JAVA_HOME=$JAVA_11_HOME'
 alias java13='export JAVA_HOME=$JAVA_13_HOME'
+alias java17='export JAVA_HOME=$JAVA_17_HOME'
 
 # default to Java 11
-java11
+java17
 
 # aplication alias
 alias og='open -na "Google Chrome"'
