@@ -1,5 +1,3 @@
-tap "adoptopenjdk/openjdk"
-tap "aws/tap"
 tap "homebrew/bundle"
 tap "homebrew/cask-versions"
 tap "wix/brew"
@@ -57,8 +55,6 @@ brew "cocoapods"
 brew "gmp"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
-# Isolated development environments using Docker
-brew "docker-compose"
 # Asynchronous event library
 brew "libevent"
 # Collection of reusable C++ library artifacts developed at Facebook
@@ -113,8 +109,6 @@ brew "pangomm@2.46"
 brew "gtkmm3"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
-# Tool for managing JavaScript projects with multiple packages
-brew "lerna"
 # Terminal file manager
 brew "lf"
 # C++ wrapper for libxml
@@ -125,8 +119,6 @@ brew "luv"
 brew "make"
 # Open source relational database management system
 brew "mysql"
-# Node version management
-brew "n"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 # Manage multiple Node.js versions
@@ -165,10 +157,6 @@ brew "wix/brew/applesimutils"
 cask "android-studio"
 # Desktop debugging platform for mobile developers
 cask "flipper"
-# Web browser
-cask "google-chrome-canary"
-# Visual tool to design, develop and administer MySQL servers
-cask "mysqlworkbench"
 # Standalone app for debugging React Native apps
 cask "react-native-debugger"
 # Messaging app with a focus on speed and security
@@ -182,52 +170,8 @@ cask "zoom"
 # OpenJDK distribution from Azul
 cask "zulu11"
 # OpenJDK distribution from Azul
+cask "zulu17"
+# OpenJDK distribution from Azul
 cask "zulu13"
 # OpenJDK distribution from Azul
 cask "zulu8"
-vscode "aaron-bond.better-comments"
-vscode "christian-kohler.npm-intellisense"
-vscode "christian-kohler.path-intellisense"
-vscode "dannyconnell.split-html-attributes"
-vscode "dbaeumer.vscode-eslint"
-vscode "DotJoshJohnson.xml"
-vscode "dsznajder.es7-react-js-snippets"
-vscode "eamodio.gitlens"
-vscode "EditorConfig.EditorConfig"
-vscode "esbenp.prettier-vscode"
-vscode "firefox-devtools.vscode-firefox-debug"
-vscode "formulahendry.auto-close-tag"
-vscode "formulahendry.auto-rename-tag"
-vscode "GitHub.copilot"
-vscode "GitHub.copilot-chat"
-vscode "GitHub.github-vscode-theme"
-vscode "gpem.4-colours"
-vscode "HarryHopkinson.vim-theme"
-vscode "mathiasfrohlich.Kotlin"
-vscode "mgmcdermott.vscode-language-babel"
-vscode "mhutchie.git-graph"
-vscode "mikaelkristiansson87.react-theme-vscode"
-vscode "ms-dotnettools.csharp"
-vscode "ms-dotnettools.vscode-dotnet-runtime"
-vscode "ms-vscode.cpptools"
-vscode "ms-vsliveshare.vsliveshare"
-vscode "msjsdiag.vscode-react-native"
-vscode "naco-siren.gradle-language"
-vscode "Nixon.env-cmd-file-syntax"
-vscode "oderwat.indent-rainbow"
-vscode "paragdiwan.gitpatch"
-vscode "rangav.vscode-thunder-client"
-vscode "redhat.java"
-vscode "redhat.vscode-xml"
-vscode "streetsidesoftware.code-spell-checker"
-vscode "styled-components.vscode-styled-components"
-vscode "uloco.theme-bluloco-light"
-vscode "vincaslt.highlight-matching-tag"
-vscode "VisualStudioExptTeam.intellicode-api-usage-examples"
-vscode "VisualStudioExptTeam.vscodeintellicode"
-vscode "vscjava.vscode-gradle"
-vscode "vscodevim.vim"
-vscode "Vue.volar"
-vscode "wesbos.theme-cobalt2"
-vscode "wix.vscode-import-cost"
-vscode "zhuangtongfa.material-theme"

@@ -1,8 +1,9 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/anton.franchuk/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Theme
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
@@ -18,7 +19,7 @@ zstyle ':omz:update' mode auto      # update automatically without asking
 zstyle ':omz:update' frequency 13
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+#ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 COMPLETION_WAITING_DOTS="true"
@@ -27,8 +28,12 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(
   git
   zsh-autosuggestions
+  zsh-completions
   zsh-syntax-highlighting
 )
+
+# command for zsh-completions
+autoload -U compinit && compinit
 
 source $ZSH/oh-my-zsh.sh
 
@@ -48,8 +53,11 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 # NVM config
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+[ -s "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" ] && \. "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" # This loads nvm
+[ -s "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
+
+# default to node 18
+nvm use 18
 
 # rbenv config
 eval "$(rbenv init - zsh)"
@@ -65,7 +73,7 @@ alias java11='export JAVA_HOME=$JAVA_11_HOME'
 alias java13='export JAVA_HOME=$JAVA_13_HOME'
 alias java17='export JAVA_HOME=$JAVA_17_HOME'
 
-# default to Java 11
+# default to Java 17
 java17
 
 # aplication alias
@@ -81,9 +89,6 @@ alias ip='ipconfig getifaddr en0'
 alias gst='git status'
 alias glg='git log --graph --decorate'
 alias gcprev='git checkout -'
-
-# alias for TWC tizen build script
-alias bt='~/bin/debug_tv'
 
 # key bindings
 bindkey '^r' history-incremental-search-backward
