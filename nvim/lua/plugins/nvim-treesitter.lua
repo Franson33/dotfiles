@@ -8,7 +8,8 @@ return {
           ensure_installed = { "lua", "heex", "javascript", "html", "json", "markdown", "typescript", "tsx" },
           sync_install = false,
           highlight = { enable = true },
-          indent = { enable = true },  
+          indent = { enable = true },
+          autotag = { enable = true },
         })
     end
  }
