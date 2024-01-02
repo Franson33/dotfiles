@@ -3,8 +3,15 @@ return {
   config = function()
     local lspconfig = require('lspconfig')
 
-    lspconfig.bashls.setup{}
-    lspconfig.tsserver.setup{}
+    local capabilities = vim.lsp.protocol.make_client_capabilities()
+    capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
+
+    local default_config = {
+      capabilites = capabilities
+    }
+
+    lspconfig.bashls.setup(default_config)
+    lspconfig.tsserver.setup(default_config)
 
     -- Global mappings.
     -- See `:help vim.diagnostic.*` for documentation on any of the below functions

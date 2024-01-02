@@ -4,7 +4,7 @@ require("bootstrap")
 require("lazy").setup("plugins")
 require("options")
 
-vim.cmd("colorscheme OceanicNext")
+vim.cmd("colorscheme oxocarbon")
 
 -- Sync clipboard between OS and Neovim.
 vim.o.clipboard = 'unnamedplus'
