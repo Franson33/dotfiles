@@ -1,6 +1,6 @@
 [user]
-email = anton.franchuk@intive.com
-name = Anton Franchuk
+email = anton.f@ezlogz.com
+name = anton.f
 
 [core]
-sshCommand = ssh -i ~/.ssh/id_sosUA
+sshCommand = ssh -i ~/.ssh/id_ezlogz

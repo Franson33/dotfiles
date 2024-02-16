@@ -1,17 +1,28 @@
 return {
   'neovim/nvim-lspconfig',
+  dependencies = {
+    'williamboman/mason.nvim',
+    'williamboman/mason-lspconfig.nvim',
+  },
   config = function()
+    require('mason').setup()
+
+    require('mason-lspconfig').setup({
+      automatic_installation = true
+    })
+
     local lspconfig = require('lspconfig')
 
     local capabilities = vim.lsp.protocol.make_client_capabilities()
     capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
 
     local default_config = {
-      capabilites = capabilities
+      capabilities = capabilities
     }
 
     lspconfig.bashls.setup(default_config)
     lspconfig.tsserver.setup(default_config)
+    lspconfig.eslint.setup(default_config)
 
     -- Global mappings.
     -- See `:help vim.diagnostic.*` for documentation on any of the below functions
@@ -50,8 +61,5 @@ return {
         end, opts)
       end,
     })
-
   end 
-
-
 }

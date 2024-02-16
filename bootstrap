@@ -31,4 +31,5 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 # create simlinks to directories in ~/.config
 ln -sv ~/dotfiles/nvim ~/.config/
 ln -sv ~/dotfiles/lf ~/.config/
+ln -sv ~/dotfiles/kitty ~/.config/
 
