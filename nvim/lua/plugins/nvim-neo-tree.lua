@@ -17,7 +17,11 @@ return {
 
     neotree.setup({
       filesystem = {
-        follow_current_file = true,  -- Automatically reveal the current file
+        hide_dotfiles = false,
+        follow_current_file = {
+          enabled = true, -- This will find and focus the file in the active buffer every time
+          leave_dirs_open = false, -- `false` closes auto expanded dirs, such as with `:Neotree reveal`
+        },
         use_libuv_file_watcher = true,  -- Use filesystem watcher to auto-refresh
       },
     })
