@@ -5,7 +5,7 @@ require("lazy").setup("plugins")
 require("options")
 require("mappings")
 
-vim.cmd("colorscheme github_light")
+vim.cmd("colorscheme catppuccin-latte")
 
 -- Sync clipboard between OS and Neovim.
 vim.o.clipboard = 'unnamedplus'
