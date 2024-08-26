@@ -29,6 +29,7 @@ COMPLETION_WAITING_DOTS="true"
 # Standard plugins can be found in $ZSH/plugins/
 plugins=(
   git
+  zsh-nvm
   zsh-autosuggestions
   zsh-completions
   zsh-syntax-highlighting
