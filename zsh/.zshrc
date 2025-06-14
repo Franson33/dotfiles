@@ -88,6 +88,10 @@ alias vim='nvim'
 # get current ip adress
 alias ip='ipconfig getifaddr en0'
 
+# enable/disable airplain mode
+alias wifiOn='networksetup -setairportpower en0 on'
+alias wifiOff='networksetup -setairportpower en0 off'
+
 # git commands aliases
 alias gst='git status'
 alias glg='git log --graph --decorate'

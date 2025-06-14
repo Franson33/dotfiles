@@ -6,3 +6,5 @@
 
 [includeIf "gitdir:~/work/"]
   path = ~/.gitconfig-work
+[core]
+	editor = vim
