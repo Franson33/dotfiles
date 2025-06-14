@@ -9,6 +9,7 @@ return {
 
 		require("mason-lspconfig").setup({
 			automatic_installation = true,
+			automatic_enable = false,
 		})
 
 		local lspconfig = require("lspconfig")
@@ -28,6 +29,7 @@ return {
 				-- storagePath = require("lspconfig.util").path.join(vim.env.XDG_DATA_HOME, "nvim-data"),
 			},
 		}))
+		lspconfig.elixirls.setup(default_config)
 
 		-- Global mappings.
 		-- See `:help vim.diagnostic.*` for documentation on any of the below functions

@@ -90,6 +90,7 @@ If you're reading this, you obviously forgot how to use your own Neovim setup ag
 - HTML/CSS
 - Kotlin
 - Bash/Shell
+- Elixir
 - Markdown
 
 ## 🔧 Quick Commands You'll Forget
